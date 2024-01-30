@@ -1,0 +1,196 @@
+/* https://images.pexels.com/photos/3259624/pexels-photo-3259624.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
+
+https://images.pexels.com/photos/4270362/pexels-photo-4270362.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
+
+https://images.pexels.com/photos/5069589/pexels-photo-5069589.jpeg?auto=compress&cs=tinysrgb&w=600*/
+
+*{
+    padding: 0rem;
+    margin: 0rem;
+}
+
+nav{
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #13131375;
+}
+
+nav h1{
+    font-size: 1.8rem;
+    letter-spacing: 0.8rem;
+    font-family: monospace;
+}
+
+a{
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    color: white;
+    margin-right: 1rem;
+    font-size: 1.2rem;
+}
+
+#hero{
+    height: 100vh;
+    display: flex;
+    background-image: url("https://images.pexels.com/photos/4033020/pexels-photo-4033020.jpeg?auto=compress&cs=tinysrgb&w=600");
+    background-size: cover;
+    background-position: center;
+}
+
+#hero .left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#hero h1{
+    width: 100%;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 1rem;
+    background-color: #13131375;
+    border-radius: 0.8rem;
+    color: white;
+    margin-right: 30rem;
+}
+
+#hero p{
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+    color: black;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   
+}
+
+.lower{
+    margin-right: 35rem;
+    margin-top: 1.8rem;
+    display: flex;
+}
+
+i{
+    font-size: 1.8rem;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #13131375;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+#bars{
+    display: none;
+}
+
+
+
+    #servics{
+        margin: 2rem 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .s-u{
+        padding: 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    .s-u h3{
+        color: black;
+    }
+
+    .s-l{
+        padding: 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    .s-l p{
+        color: black;
+        font-size: 1.4rem;
+    }
+
+    #about{
+        padding: 1rem;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: #131313d7;
+        border-radius: 0.8rem;
+        flex-wrap: wrap;
+    }
+
+    .center img{
+        width: 100%;
+        border-radius: 0.8rem;
+        /* display: flex; */
+    }
+
+    .center{
+        width: 20rem;
+    }
+
+
+    @media screen and (max-width:768px) {
+        .center{
+            width: 100%;
+        }
+        .rigth{
+            display: none;
+        }
+        nav h1{
+            font-size: 1.5rem;
+        }
+        #bars{
+            display: flex;
+        }
+
+        #hero .left{
+            width: 100%;
+        }
+        #hero h1{
+            font-size: 1.5rem; 
+            margin-top: 1rem;
+            width: 70%;
+        }
+    
+        #hero p{
+           
+            font-size:0.8rem ;
+        }
+        .s-l{
+            font-size: 0.8rem;
+        }
+        i{
+            font-size: 1rem;
+        }
+    
+        .lower{
+            display: flex;
+        }
+    
+        #about{
+            display: flex;
+            flex-direction: column;
+        }
+    
+        #servics{
+            height: 100% !important;
+        }
+    }
